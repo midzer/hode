@@ -11,7 +11,7 @@ endif(VITA)
 
 include(FindPkgConfig)
 
-pkg_check_modules(SDL2 sdl2 REQUIRED)
+pkg_check_modules(SDL2 sdl2)
 
 include_directories(
   ${SDL2_INCLUDE_DIRS}
@@ -26,6 +26,8 @@ add_executable(${CMAKE_PROJECT_NAME}
 target_link_libraries(${CMAKE_PROJECT_NAME}
   ${SDL2_LIBRARIES}
 )
+
+add_compile_options(-O3 -flto -fno-rtti -fno-exceptions -sUSE_SDL=2)
 
 if(NINTENDO_SWITCH)
   add_definitions(-D__SWITCH__)

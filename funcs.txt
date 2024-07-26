@@ -1,0 +1,21 @@
+[
+    "main",
+    "Game::displayLoadingScreen()",
+    "Game::displayHintScreen(int, int)",
+    "Game::playAndyFallingCutscene(int)",
+    "PafPlayer::play(int)",
+    "System_SDL2::updateScreen(bool)",
+    "System_SDL2::sleep(int)",
+    "Menu::refreshScreen()",
+    "Menu::changeToOption(int)",
+    "Menu::drawPlayerProgress(int, int)",
+    "Menu::handleSettingsScreen(int)",
+    "Menu::drawSoundScreen()",
+    "Menu::drawLevelScreen()",
+    "Menu::drawCutsceneScreen()",
+    "Menu::drawCheckpointScreen()",
+    "SDL_Delay",
+    "GLES2_RenderPresent",
+    "Emscripten_GLES_SwapWindow",
+    "dynCall_v"
+]
